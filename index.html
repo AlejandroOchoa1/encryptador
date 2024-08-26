@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryptador de Texto</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://kit.fontawesome.com/1f6d9bae9f.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logos">
+            <img src="./image/Logo@2x.png" alt="Alura_logo" class="logo">
+        </a> 
+        <a href="index.html" class="logos">
+            <img src="./image/Logo.png" alt="Alura_logo" class="imagen_responsiva">
+        </a>
+    </header>
+    <main class="encryptar">
+        <div class="encryptar__area__acciones">
+            <textarea class="input__entrada__texto" type="text" name="entrada_texto" id="entrada_texto" placeholder="Ingrese el texto aqui" autocomplete="off"
+            onkeypress="return (event.charCode >= 97 && event.charCode <= 122 || event.charCode == 32)"></textarea>
+                <p class="notificacion"><i class="fa-solid fa-circle-exclamation"></i> Solo introduce minúsculas y  sin acentos</p>
+                    <div class="botones__accion">
+                        <button type="submit" class="botones__encriptar" id="submit_encryptar"
+                        onclick="encryptar()">Encryptar</button>
+                        <button type="submit" class="botones__desencryptar"
+                        onclick="desencryptar()">Desencryptar</button>
+                    </div>
+        </div>
+        <div class="desencryptar">
+            <img src=".//image/Ningun mensaje encontrado.png" alt="Ningun mensaje encontrado" class="desencryptar__imagen" id="myImage">
+            <textarea id="myTextarea" readonly></textarea>
+            <button id="copyButton" onclick="copyText()">Copiar</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <p><i class="fa-regular fa-copyright"></i> Desarollado por Alejandro Ochoa 2024
+            <a href="Https://www.linkedin.com/in/mario-alejandro-ochoa-rojas-dev" target="_blank">
+                <i class="fa-brands fa-linkedin fa-bounce" style="color: #055ffa;"></i>
+            </a>
+    
+            <a href="https://github.com/AlejandroOchoa1" target="_blank">
+                <i class="fa-brands fa-square-github fa-beat" style="color: #050505;"></i></p>
+            </a>
+    </footer> 
+</body>
+</html>
+
+
+
+
